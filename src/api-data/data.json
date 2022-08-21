@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "América do sul",
+    "img": "/images/america-sul.jpg",
+    "briefDescription": "O continente mais explorado.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit corporis, quia cupiditate laudantium autem necessitatibus deleniti blanditiis dicta libero, perferendis nemo assumenda accusantium, dolores exercitationem veniam dignissimos at ad.",
+    "languages": ["pt", "en"],
+    "countries": [
+      {
+        "name": "Brasil",
+        "flagImg": "",
+        "cities": [{ "name": "Recife", "img": "/images/recife.jpg" }]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Europa",
+    "img": "/images/europa.jpg",
+    "briefDescription": "O continente mais antigo.",
+    "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+    "languages": ["en"],
+    "countries": [
+      {
+        "name": "Alemanha",
+        "flagImg": "",
+        "cities": [{ "name": "Teste", "img": "/images/alemanha.jpg" }]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Asia",
+    "img": "/images/asia.jpg",
+    "briefDescription": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit corporis, quia cupiditate laudantium autem necessitatibus deleniti blanditiis dicta libero, perferendis nemo assumenda accusantium, dolores exercitationem veniam dignissimos at ad.",
+    "languages": ["pt"],
+    "countries": [
+      {
+        "name": "Algum",
+        "flagImg": "",
+        "cities": [{ "name": "Teste", "img": "" }]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Antartida",
+    "img": "/images/antartida.jpg",
+    "briefDescription": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit corporis, quia cupiditate laudantium autem necessitatibus deleniti blanditiis dicta libero, perferendis nemo assumenda accusantium, dolores exercitationem veniam dignissimos at ad.",
+    "languages": ["pt"],
+    "countries": [
+      {
+        "name": "Algum",
+        "flagImg": "",
+        "cities": [{ "name": "Teste", "img": "" }]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "África",
+    "img": "/images/africa.jpg",
+    "briefDescription": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit corporis, quia cupiditate laudantium autem necessitatibus deleniti blanditiis dicta libero, perferendis nemo assumenda accusantium, dolores exercitationem veniam dignissimos at ad.",
+    "languages": "pt",
+    "countries": [
+      {
+        "name": "Algum",
+        "flagImg": "",
+        "cities": [{ "name": "Teste", "img": "" }]
+      }
+    ]
+  }
+]
