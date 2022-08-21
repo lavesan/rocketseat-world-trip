@@ -133,8 +133,12 @@ export default function Home({ continents }: IHomeProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const data = await fetch("http://localhost:3000/api/continents").then((res) =>
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  const hostName = req.headers.host.includes("localhost")
+    ? `http://${req.headers.host}`
+    : `https://${req.headers.host}`;
+
+  const data = await fetch(`${hostName}/api/continents`).then((res) =>
     res.json()
   );
 

@@ -91,11 +91,18 @@ export default function Continent({ continent }: IContinentProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps = async ({
+  params,
+  req,
+}) => {
   const { id } = params;
-  const data = await fetch(
-    `http://localhost:3000/api/continents?id=${id}`
-  ).then((res) => res.json());
+  const hostName = req.headers.host.includes("localhost")
+    ? `http://${req.headers.host}`
+    : `https://${req.headers.host}`;
+
+  const data = await fetch(`${hostName}/api/continents?id=${id}`).then((res) =>
+    res.json()
+  );
 
   return {
     props: {
