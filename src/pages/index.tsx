@@ -87,6 +87,7 @@ export default function Home({ continents }: IHomeProps) {
           right="8.75rem"
           top="3rem"
           src="/images/Airplane.svg"
+          alt="avião introdução"
           w="30vw"
         />
       </Flex>
@@ -113,7 +114,12 @@ export default function Home({ continents }: IHomeProps) {
         <Flex flexDir="row" justify="space-between" px="8.75rem" my="5rem">
           {pleasures.map(({ label, img }) => (
             <Flex key={label} flexDir="column" align="center">
-              <Image src={img} w="5.313rem" mb="1.5rem" />
+              <Image
+                src={img}
+                alt={`imagem ${label}`}
+                w="5.313rem"
+                mb="1.5rem"
+              />
               <Text fontSize="1.5rem">{label}</Text>
             </Flex>
           ))}
@@ -147,7 +153,9 @@ export default function Home({ continents }: IHomeProps) {
         <Swiper
           navigation
           style={{
+            // @ts-ignore
             "--swiper-navigation-color": "var(--chakra-colors-yellow-100)",
+            // @ts-ignore
             "--swiper-pagination-color": "var(--chakra-colors-yellow-100)",
           }}
           modules={[Navigation, Pagination, A11y]}
