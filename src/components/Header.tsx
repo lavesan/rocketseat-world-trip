@@ -9,7 +9,11 @@ export const Header = () => {
   const showArrowBack = asPath !== "/";
 
   return (
-    <Grid as="header" p="1rem" templateColumns="repeat(5, 1fr)">
+    <Grid
+      as="header"
+      p={["1rem", "1.688rem 8.75rem"]}
+      templateColumns="repeat(5, 1fr)"
+    >
       <GridItem colSpan={1}>
         {showArrowBack && (
           <Link href="/" passHref>
@@ -27,7 +31,7 @@ export const Header = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Image src="/images/Logo.svg" alt="logo" w="5.063rem" />
+        <Image src="/images/Logo.svg" alt="logo" w={["5.063rem", "11.5rem"]} />
       </GridItem>
       <GridItem colSpan={1} />
     </Grid>
